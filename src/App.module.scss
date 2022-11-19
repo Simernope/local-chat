@@ -1,0 +1,31 @@
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  .form {
+    display: inline-flex;
+    flex-direction: column;
+    width: 300px;
+    text-align: center;
+    border: 2px solid #ed64a2;
+    border-radius: 50px;
+
+    .input {
+      padding: 20px;
+      border: 2px solid aqua;
+      border-radius: 50px;
+      margin: 20px;
+    }
+
+    .button {
+      padding: 20px;
+      background: aquamarine;
+      border-radius: 50px;
+      width: 130px;
+    }
+  }
+}
+
+
+
+
+

@@ -1,0 +1,44 @@
+.containerMessage {
+  width: 1000px;
+  margin-top: 0;
+  display: inline-flex;
+  border-radius: 20px;
+
+  .input {
+    border: 2px solid #879cc2;
+    border-radius: 20px;
+
+    width: 950px;
+    height: auto;
+    word-break: break-all;
+
+  }
+
+
+  .sendIcon {
+    color: #ed64a2;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.picker-container {
+  position: relative;
+  width: 300px;
+}
+.emoji-icon {
+  cursor: pointer;
+  position: absolute;
+  top: 8px;
+  right: 5px;
+}
+
+.smile-icon{
+
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+
+

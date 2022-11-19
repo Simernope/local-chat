@@ -1,0 +1,25 @@
+.button{
+  width: 100px;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 12px 24px;
+  background: #E6F0F0;
+  color: #006666;
+  cursor: pointer;
+  margin: 5px;
+  display: inline-flex;
+  text-align: center;
+  justify-content: center;
+  &:hover{
+    background: #3AB8BC;
+    color: #ffffff;
+  }
+  &_disabled{
+    opacity: 0.45;
+    cursor: not-allowed;
+  }
+}
+
+

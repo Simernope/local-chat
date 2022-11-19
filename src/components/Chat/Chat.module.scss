@@ -1,0 +1,21 @@
+.container{
+  width: 1000px;
+  height: 350px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .2);  padding: 10px;
+  color: #006666;
+  overflow-y: scroll;
+
+  .items{
+   /* display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;*/
+    .notMyMessage{
+      display: flex;
+      justify-content: flex-start;
+    }
+    &_myMessage{
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
