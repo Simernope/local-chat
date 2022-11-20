@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+# Веб-приложение - локальный чат. (React JS)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Проект доступен по ссылке - https://simernope.github.io/local-chat/
 
-## Available Scripts
+## Технические сведения.
 
-In the project directory, you can run:
+- Чат работает без сервера, в рамках одного браузера.
+- Хранилищем выступает localstorage. Все данные, включая сообщения, записываются туда.
+- Данные чата восстанавливаются при входе пользователя в чат.
+- В качестве сессии выстпает sessionstorage, при входе пользователя в чат, туда записывается имя. Так чат проверяет,кому принадлежат сообщения.
 
-### `npm start`
+## Логика работы.
+- При открытии страницы пользователю всегда предлагается ввести ID чата и имя. 
+![image](https://user-images.githubusercontent.com/73115375/202901121-937ac607-0629-4ffe-b6a7-f1829ee040f5.png)
+- После нажатия кнопки "Найти чат", форма проверяет существует ли чат с таким ID и выводит соответствующее - сообщение на экран.
+![image](https://user-images.githubusercontent.com/73115375/202901146-df73a3d2-1ea4-4f72-97e4-5c66b3720d59.png)
+- После подключения к чату, пользователь может отправлять сообщения, изменять название чата и отправлять эмодзи.
+![image](https://user-images.githubusercontent.com/73115375/202901180-dfb974bb-dbeb-4d65-aef0-74eebbc44ccc.png)
+- Подключиться к другому чату можно с новой вкладки.
+![image](https://user-images.githubusercontent.com/73115375/202901200-715c9a5a-8744-49f7-8f9b-75f16ac0eccd.png)
+![image](https://user-images.githubusercontent.com/73115375/202901243-17e4d368-b603-4b5d-b103-e02ddfca1c9c.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Localstorage
+- Хранилищем выступает localstorage. Все данные, включая сообщения, записываются туда.
+![image](https://user-images.githubusercontent.com/73115375/202901267-e79a338e-b121-416b-9488-f9b2fa023d87.png)
